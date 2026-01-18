@@ -1,0 +1,82 @@
+# Data files (usually too large for git)
+*.csv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+!**/sample*.csv
+
+# Competition data folders
+competitions/*/data/raw/
+competitions/*/data/processed/
+datasets/*/data/raw/
+datasets/*/data/processed/
+
+# Model artifacts
+*.model
+*.ckpt
+*.pt
+*.pth
+*.weights
+*.h5
+artifacts/models/
+
+# Submissions (keep structure, ignore large files)
+artifacts/submissions/*.csv
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+.env
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Kaggle API
+kaggle.json
+
+# Secrets
+.secrets/
+*.key
+*.pem

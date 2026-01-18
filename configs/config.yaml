@@ -1,0 +1,33 @@
+# Global Configuration
+
+default:
+  seed: 42
+  n_folds: 5
+  
+paths:
+  competitions: competitions/
+  datasets: datasets/
+  artifacts: artifacts/
+  
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+models:
+  lightgbm:
+    num_leaves: 31
+    learning_rate: 0.05
+    feature_fraction: 0.8
+    bagging_fraction: 0.8
+    bagging_freq: 5
+    
+  xgboost:
+    max_depth: 6
+    learning_rate: 0.05
+    subsample: 0.8
+    colsample_bytree: 0.8
+    
+  catboost:
+    depth: 6
+    learning_rate: 0.05
+    iterations: 1000
